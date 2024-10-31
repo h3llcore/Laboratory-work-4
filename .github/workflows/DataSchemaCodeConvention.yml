@@ -10,6 +10,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
       - name: Start JSON Linter
-        run: |
+        run: | 
           npm i -g @prantlf/jsonlint
-          jsonlint $GITHUB_WORKSPACE/JSON_DetailedDataSchema_Example.json
+          jsonlint $GITHUB_WORKSPACE/.github/workflows/JSON_DetailedDataSchema_Example.json
